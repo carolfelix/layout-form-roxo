@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #6b37ce;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.685);
+}
+
+.imagem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(246, 245, 247);
+}
+.imagem img{
+    width: 25rem;
+}
+.register{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.sign-in{
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+.sign-in span{
+    margin-top: 5px;
+    margin-right: 1rem;
+    color: gray;
+}
+.sign-in button{
+    width: 20%;
+    height: 35%;
+    background-color: white;
+    color: #9d8baf;
+    border-radius: 10px;
+    border: 1px solid rgb(83, 9, 83);
+    color: rgb(83, 9, 83);
+    transition: 0.25s;
+}
+.login {
+    --hover: rgb(59, 2, 59);
+}
+.login:hover,
+.login:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+.fill {
+    --hover:rgb(83, 9, 83);
+  }
+
+  .fill:hover,  .fill:focus{
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+    color: white;
+}
+
+.register .titulos {
+    color: rgb(12, 12, 37);
+    margin-bottom: 1.5rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.titulos h1{
+    font-size: 2rem;
+}
+.titulos h2{
+    font-size: 1rem;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 4rem;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+main form label span{
+    font-size:  1.1rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background:white;
+    width: 400px;
+    height: 45px;
+    padding: 0 0.4rem;
+    margin-top: 1rem;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    border-bottom: 1px solid #B163FF;
+} 
+
+form .submit{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+form .submit input[type="submit"]{
+    width: 40%;
+    border-radius: 20px;
+    background-color: rgb(83, 9, 83);
+    border: 1px solid rgb(83, 9, 83);
+    color: white;
+}
+
+.register footer{
+    width: 100%;
+    flex-direction: row;    
+    padding-top: 1rem;
+}
+.social-fields{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+    padding-left: 4rem;
+}
+.social-fields span{
+    padding: 10px 10px 0 0;
+    color: rgb(124, 104, 124);
+}
+.social-field{
+    border-radius: 30px;
+    width: 8%;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    margin: 0.3rem;
+    
+}
+.social-field:hover{
+    top:-4px;box-shadow:0 4px 3px #999
+}
+ .social-field a i{
+    width: 100%;
+}
+
+.social-field a {
+    text-decoration: none;
+    color: #000000d3;;
+    font-size: 1.2rem;
+}
+ .google, .facebook, .linkedin{
+    border: 1px solid #807f7b4f;
+    background: white;
+}
+
+.social-field.facebook i{
+    color: rgb(37, 37, 170);
+}
+.social-field.google i{
+    color: rgb(28, 110, 7);
+}
+
+section.images .circle{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #482688, #3b187e);
+    top: 0;
+    left: 0;
+    clip-path: circle(70% at right 100%);
+    z-index: -1;
+}
+
+.underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg,#e2602d, #e0d100);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+}
